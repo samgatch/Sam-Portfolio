@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<script>src="script.js"</script>
+	<script src="script.js" defer></script>
 	<title>SDG Portfolio</title>
 	<nav>
 		<h1>Samuel Gascho</h1>
@@ -41,9 +41,11 @@
 			<p>Since my leave from school I've still been working on my computer science skills. I did however switch to HTML,CSS,and javaScript. I found that making websites from scratch was fun and entertaining. I'm to the point now where I'm starting a family and want to try my hand a making a career in tech.</p>
 		</div>
 	</div>
-	<div class="slides">
-		<ul>
-			<li class="slide">
+	<div class="slides" data-slidesContainer>
+		<button class="slidesButton next" data-buttons-slides = "next">&#10526;</button>
+		<button class="slidesButton prev" data-buttons-slides =>&#10525;</button>
+		<ul data-slides>
+			<li class="slide" data-active>
 				<img src="https://images.unsplash.com/photo-1707343848552-893e05dba6ac?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
 			</li>
 			<li class="slide">

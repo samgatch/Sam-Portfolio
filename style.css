@@ -37,6 +37,7 @@ nav a{
     background-color: #000022;
     padding: 1.5rem;
     border: #B8DBD9 5px outset;
+    border-radius: .5rem;
 }
 .timeline{
     width: 80%;
@@ -49,8 +50,9 @@ nav a{
     justify-content: center;
     align-items: center;
     background-color: #000022;
-    box-shadow: #B8DBD9 5px 5px;
+    box-shadow: #B8DBD9 0px 2px 0px 3px;
     margin-bottom: 1.5rem;
+    border-radius: 1rem;
 }
 .segment h3{
     width: 30%;
@@ -58,11 +60,24 @@ nav a{
 .segment p{
     width: 60%;
 }
-.slides{
+.projects{
     position: relative;
     width: 90%;
-    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-color: #000022;
     margin-bottom: 3rem;
+    border: #B8DBD9 inset 5px;
+    border-radius: .5rem;
+
+}
+.slides{
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 3.5rem;
 }
 .slides > ul{
     padding: 0;
@@ -73,16 +88,22 @@ nav a{
     position: absolute;
     inset: 0;
     opacity: 0;
+    transition: opacity 250ms;
+    transition-delay: 200ms;
 }
-.slide > img {
+.slide > figure > img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
+.slide >figure > figcaption{
+    padding: .5rem;
+}
 .slide[data-active]{
     opacity: 1;
+    transition-delay: 200ms;
 }
 .slidesButton {
     z-index: 2;
@@ -104,8 +125,8 @@ nav a{
     background-color: rgba(0, 0, 0, .8);
 }
 .next{
-    right: 1rem;
+    right: 3rem;
 }
 .prev{
-    left: 1rem;
+    left: 3rem;
 }

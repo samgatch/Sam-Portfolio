@@ -32,3 +32,5 @@ darkMode.onclick = function() {
         darkMode.src = "moon.png";
     }
 }
+//End of the Dark Mode script
+

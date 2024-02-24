@@ -25,4 +25,10 @@ buttons.forEach(button => {
 let darkMode = document.getElementById("dark");
 darkMode.onclick = function() {
     document.body.classList.toggle("darkMode");
+    if (document.body.classList.contains("darkMode")){
+        darkMode.src = "sun.png";
+    }
+    else{
+        darkMode.src = "moon.png";
+    }
 }

@@ -35,14 +35,21 @@ nav a{
 nav a:hover{
     color: var(--secondary-color);
 }
-.dark{
+#dark{
     text-align: center;
-    padding: .25rem;
     border-radius: 1.5rem;
+    background-color: var(--secondary-color);
+    border: var(--shadow-color) 2px solid;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    padding: .25rem;
+    transition: all 250ms;
 }
-
-.dark:hover{
-    padding:.5rem;
+#dark:hover{
+    box-shadow: var(--word-color) 3px 3px 0px;
+    width: 2.75rem;
+    height: 2.75rem;
 }
 nav button{
     color: var(--word-color);

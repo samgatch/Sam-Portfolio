@@ -85,6 +85,11 @@ body{
     padding: 1.5rem;
     border: var(--shadow-color) 5px outset;
     border-radius: .5rem;
+    transition: all 500ms;
+}
+.about:hover, .segment:hover{
+    box-shadow: var(--word-color) 10px 10px 8px;
+    transition: all 500ms;
 }
 .timeline{
     width: 80%;
@@ -97,9 +102,10 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-color);
-    box-shadow: var(--shadow-color) 0px 2px 0px 3px;
+    border: var(--shadow-color) 4px outset;
     margin-bottom: 1.5rem;
     border-radius: 1rem;
+    transition: all 500ms;
 }
 .segment h3{
     width: 30%;

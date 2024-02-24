@@ -1,3 +1,4 @@
+//Script to add the functionality to the carousel
 const buttons = document.querySelectorAll("[data-buttons-slides]")
 
 buttons.forEach(button => {
@@ -18,3 +19,10 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active;
     });
 });
+//End of the carousel Script
+
+//Start of Dark Mode script
+let darkMode = document.getElementById("dark");
+darkMode.onclick = function() {
+    document.body.classList.toggle("darkMode");
+}

@@ -3,8 +3,17 @@
 }
 html{
     font-size: 16px;
-    background-color: #001242;
-    color: #F4F4F9;
+}
+:root{
+    --primary-color: #586F7C;
+    --secondary-color: #F4F4F9;
+    --word-color: #001242;
+    --shadow-color: #B8DBD9;
+}
+.darkMode{
+    --primary-color: #001242;
+    --secondary-color: #000022;
+    --word-color: #F4F4F9;
 }
 nav{
     display: flex;
@@ -13,16 +22,45 @@ nav{
     width: 100%;
     position: fixed;
     height: 5rem;
-    background-color: #000022;
+    background-color: var(--secondary-color);
     z-index: 1;
     left: 0;
     top: 0;
-    border-bottom: #B8DBD9 3px solid;
+    border-bottom: var(--shadow-color) 3px solid;
 }
 nav a{
     text-decoration: none;
+    color: var(--word-color);
 }
-.main{
+nav a:hover{
+    color: var(--secondary-color);
+}
+.dark{
+    text-align: center;
+    padding: .25rem;
+    border-radius: 1.5rem;
+}
+
+.dark:hover{
+    padding:.5rem;
+}
+nav button{
+    color: var(--word-color);
+    background-color: var(--primary-color);
+    padding: .3rem;
+    transition: all 500ms;
+    border-radius: .5rem;
+}
+nav button:hover{
+    background-color:var(--primary-color);
+    padding: .4rem;
+    box-shadow: var(--word-color) 4px 4px 0px;
+    color: var(--secondary-color);
+}
+nav button:active{
+    background-color: #001242;
+}
+body{
     position: relative;
     top: 6rem;
     text-align: center; 
@@ -31,12 +69,14 @@ nav a{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    background-color: var(--primary-color);
+    color: var(--word-color);
 }
 .about{
     width: 60%;
-    background-color: #000022;
+    background-color: var(--secondary-color);
     padding: 1.5rem;
-    border: #B8DBD9 5px outset;
+    border: var(--shadow-color) 5px outset;
     border-radius: .5rem;
 }
 .timeline{
@@ -49,8 +89,8 @@ nav a{
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    background-color: #000022;
-    box-shadow: #B8DBD9 0px 2px 0px 3px;
+    background-color: var(--secondary-color);
+    box-shadow: var(--shadow-color) 0px 2px 0px 3px;
     margin-bottom: 1.5rem;
     border-radius: 1rem;
 }
@@ -62,26 +102,26 @@ nav a{
 }
 .projects{
     position: relative;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    background-color: #000022;
-    margin-bottom: 3rem;
-    border: #B8DBD9 inset 5px;
-    border-radius: .5rem;
-
+    width: 90vw;
+    height: 50vh;
+    overflow: hidden;
+    border: var(--shadow-color) 5px  inset;
+    margin-bottom: 5rem;
+    background-color: var(--secondary-color);
+}
+.projectsTitle{
+    padding: .5rem;
+    margin: 0;
 }
 .slides{
     position: relative;
-    width: 100%;
-    height: 20rem;
-    margin-bottom: 3.5rem;
+    width: 100vw;
+    padding: .5rem;
+    height: 50vh;
+    border-top: var(--primary-color) 3px solid;
 }
 .slides > ul{
     padding: 0;
-    margin: 0;
     list-style: none;
 }
 .slide{
@@ -91,15 +131,12 @@ nav a{
     transition: opacity 250ms;
     transition-delay: 200ms;
 }
-.slide > figure > img {
+.slide > img{
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
     object-position: center;
-}
-.slide >figure > figcaption{
-    padding: .5rem;
 }
 .slide[data-active]{
     opacity: 1;
@@ -112,7 +149,7 @@ nav a{
     outline: none;
     border: none;
     font-size: 2.3rem;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     color: rgba(256, 256, 256, .7);
     cursor: pointer;
@@ -125,8 +162,8 @@ nav a{
     background-color: rgba(0, 0, 0, .8);
 }
 .next{
-    right: 3rem;
+    right: 14%;
 }
 .prev{
-    left: 3rem;
+    left: 2%;
 }

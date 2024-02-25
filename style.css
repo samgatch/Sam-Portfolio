@@ -1,8 +1,10 @@
+
 *{
     box-sizing: border-box;
 }
 html{
     font-size: 16px;
+    font-family: 'Poppins';
 }
 :root{
     --primary-color: #586F7C;
@@ -50,10 +52,12 @@ nav a:hover{
     box-shadow: var(--word-color) 3px 3px 0px;
     width: 2.75rem;
     height: 2.75rem;
+    background-color: var(--primary-color);
 }
 nav button{
     color: var(--word-color);
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: var(--shadow-color) 2px solid;
     padding: .3rem;
     transition: all 500ms;
     border-radius: .5rem;
@@ -87,6 +91,14 @@ body{
     border-radius: .5rem;
     transition: all 500ms;
 }
+.about a{
+    text-decoration: none;
+    color: var(--word-color);
+    cursor: pointer;
+}
+.about a:hover{
+    color: var(--shadow-color);
+}
 .about:hover, .segment:hover{
     box-shadow: var(--word-color) 10px 10px 8px;
     transition: all 500ms;
@@ -107,11 +119,22 @@ body{
     border-radius: 1rem;
     transition: all 500ms;
 }
+.segment button{
+    border: var(--shadow-color) 1px solid;
+    font-size: 2rem;
+    width: 3rem;
+    height: 2.5rem;
+    outline: none;
+    border-radius: 2rem;
+    z-index: 2;
+}
 .segment h3{
     width: 30%;
+    padding: 1rem;
 }
 .segment p{
     width: 60%;
+    padding: 1rem;
 }
 .projects{
     position: relative;

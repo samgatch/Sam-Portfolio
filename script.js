@@ -33,4 +33,3 @@ darkMode.onclick = function() {
     }
 }
 //End of the Dark Mode script
-

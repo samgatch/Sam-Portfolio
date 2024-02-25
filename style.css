@@ -92,7 +92,6 @@ body{
     transition: all 500ms;
 }
 .about a{
-    text-decoration: none;
     color: var(--word-color);
     cursor: pointer;
 }

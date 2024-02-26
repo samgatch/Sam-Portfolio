@@ -82,3 +82,46 @@ body{
     background-color: var(--primary-color);
     color: var(--word-color);
 }
+.basic{
+    width: 90%;
+    display: flex;
+    background-color: var(--secondary-color);
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    border: var(--shadow-color) 5px outset;
+    border-radius: .5rem;
+    transition: all 500ms;
+}
+.basic:hover{
+    box-shadow: var(--word-color) 10px 10px 8px;
+    transition: all 500ms;
+}
+.location{
+    width: 100%;
+}
+.basic iframe{
+    width: 100%;
+    border-top: var(--primary-color) 3px solid;
+    border-bottom: var(--primary-color) 3px solid;
+}
+.whoIAm {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.whoIAm h3 {
+    width: 100%;
+}
+.whoIAm p {
+    width: 40%;
+    padding: 1rem;
+    border: var(--primary-color) 3px solid;
+}
+.whoIAm img{
+    width: 40%;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}

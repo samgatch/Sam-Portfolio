@@ -84,7 +84,7 @@ body{
     color: var(--word-color);
 }
 .about{
-    width: 60%;
+    width: 90%;
     background-color: var(--secondary-color);
     padding: 1.5rem;
     border: var(--shadow-color) 5px outset;

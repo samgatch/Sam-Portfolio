@@ -19,15 +19,15 @@
         <h3>Contact Me!</h3>
         <form action="https://formsubmit.co/samgatch@icloud.com" method="POST" id="contact">
             <div class="input-row">
-                <input type="text" placeholder="Full Name" id="name" class="data" required>
-                <input type="email" placeholder="E-Mail" id="email" class="data">
+                <input type="text" placeholder="Full Name" id="name" class="data" required name="name">
+                <input type="email" placeholder="E-Mail" id="email" class="data" required name="email">
             </div>
             <div class="input-row">
-                <input type="text" placeholder="Phone Number" id="number" class="data">
-                <input type="text" placeholder="Subject" id="subject" class="data">
+                <input type="text" placeholder="Phone Number" id="number" class="data" name="number">
+                <input type="text" placeholder="Subject" id="subject" class="data" name="subject">
             </div>
             <div class="textarea">
-                <textarea name="" id="message" cols="60" rows="10" placeholder="Enter your message here." class="data"></textarea>
+                <textarea name="" id="message" cols="60" rows="10" placeholder="Enter your message here." class="data" name="message"></textarea>
             </div>
             <button type="submit">Send</button>
         </form>

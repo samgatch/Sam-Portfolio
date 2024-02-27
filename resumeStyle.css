@@ -179,6 +179,14 @@ body{
 .extra ul li{
     padding-bottom:.5rem;
 }
+.extra ul li a{
+    text-decoration: none;
+    color: var(--word-color);
+    cursor: pointer;
+}
+.extra ul li a:hover{
+    color: var(--shadow-color);
+}
 .skills{
     display: flex;
     width: 90%;

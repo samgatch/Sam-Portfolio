@@ -196,6 +196,7 @@ body{
 .skillCat{
     border: var(--primary-color) 3px solid;
     padding: 1rem;
+    width: 30%;
 }
 .skillCat ul{
     list-style-type: square;
